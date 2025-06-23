@@ -50,7 +50,7 @@ function Test-MtCisaRequireActivationApproval {
     if ($testResult) {
         $testResultMarkdown = "Well done. Your tenant has no unmanaged active role assignments:`n`n%TestResult%"
     } else {
-        $testResultMarkdown = "Your tenant has active assignments without a start date."
+        $testResultMarkdown = "Activation of the Global Administrator role does not require approval:`n`n%TestResult%"
     }
     Add-MtTestResultDetail -Result $testResultMarkdown
 
